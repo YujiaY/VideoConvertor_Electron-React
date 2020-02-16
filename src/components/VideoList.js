@@ -53,7 +53,7 @@ class VideoList extends Component {
           </div>
           <div className="secondary-content" style={styles.secondaryContent}>
             <select
-              className={complete || timemark ? "hidden" : "browser-default right"}
+              className={timemark ? "hidden" : "browser-default right"}
               value={format}
               onChange={e => this.props.onFormatChange(video, e.target.value)}
             >
